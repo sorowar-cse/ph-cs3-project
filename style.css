@@ -167,9 +167,10 @@ nav ul li a:hover {
 }
 
 /* Fact styles ...   */
-.sponsor {
-text-align: center;
+.facts {
+    margin-top: 50px;
 }
+
 .fact-images {
     display: flex;
     justify-content: space-around;
@@ -201,6 +202,10 @@ text-align: center;
 }
 
 /* Sponsor styles ...   */
+.sponsor {
+    text-align: center;
+    }
+
 .sponsors-img-container {
     display: flex;
     justify-content: space-around;
@@ -208,4 +213,369 @@ text-align: center;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+/* Responsive Design Starts Here.. */
+
+/* For Mobile Devices */
+@media screen and (max-width: 576px) {
+    header {
+        padding: 30px 15px;
+    }
+
+    nav {
+        padding: 0px 20px;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-top: 15px;
+        padding: 0 0.5rem;
+    }
+
+    .banner-content {
+        padding: 0px 20px;
+    }
+
+    .banner h3 {
+        font-size: 2.5rem;
+    }
+
+    .About {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .About .About-left {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .About .About-right {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .features {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .features .section-title {
+        border-left: 5px solid #FF900E;
+        padding-left: 15px;
+        margin-bottom: 50px;
+    }
+
+    .feature-content .card {
+        padding: 20px;
+    }
+
+    .feature-img img {
+        height: 100%;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .ten-years-badge {
+        border-radius: 10px;
+        background: #FF900E;
+        color: #FFF;
+        width: 300px;
+        padding: 40px;
+        text-align: center;
+        position: relative;
+        bottom: 100px;
+    }
+
+    .ten-years-badge h2 {
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    .ten-years-badge p {
+        font-size: 1.2rem;
+    }
+
+    .facts {
+        margin-top: 50px;
+    }
+
+    .fact-images {
+/* flex-direction: column; */
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fact-card {
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        border: 1px solid #FF900E;
+    }
+
+    .fact-card .card-stats {
+        margin-top: 15px;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #000000;
+    }
+
+    .fact-card .card-title {
+        margin-top: 5px;
+        font-size: 1rem;
+        font-weight: 400;
+        color: #727272;
+    }
+
+    .sponsor {
+        text-align: center;
+    }
+
+    .sponsors-img-container {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+/* For Tablets */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    header {
+        padding: 30px 15px;
+    }
+
+    nav {
+        padding: 0px 20px;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-top: 15px;
+        padding: 0 0.5rem;
+    }
+
+    .banner-content {
+        padding: 0px 20px;
+    }
+
+    .banner h3 {
+        font-size: 2.5rem;
+    }
+
+    .About {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .About .About-left {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .About .About-right {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .features {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .features .section-title {
+        border-left: 5px solid #FF900E;
+        padding-left: 15px;
+        margin-bottom: 50px;
+    }
+
+    .feature-content .card {
+        padding: 20px;
+    }
+
+    .feature-img img {
+        height: 100%;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .ten-years-badge {
+        border-radius: 10px;
+        background: #FF900E;
+        color: #FFF;
+        width: 300px;
+        padding: 40px;
+        text-align: center;
+        position: relative;
+        bottom: 100px;
+    }
+
+    .ten-years-badge h2 {
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    .ten-years-badge p {
+        font-size: 1.2rem;
+    }
+
+    .facts {
+        margin-top: 50px;
+    }
+
+    .fact-images {
+/* flex-direction: column; */
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fact-card {
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        border: 1px solid #FF900E;
+    }
+
+    .fact-card .card-stats {
+        margin-top: 15px;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #000000;
+    }
+
+    .fact-card .card-title {
+        margin-top: 5px;
+        font-size: 1rem;
+        font-weight: 400;
+        color: #727272;
+    }
+
+    .sponsor {
+        text-align: center;
+    }
+
+    .sponsors-img-container {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+/* For Desktops */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    header {
+        padding: 30px 15px;
+    }
+
+    nav {
+        padding: 0px 20px;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-top: 15px;
+        padding: 0 0.5rem;
+    }
+
+    .banner-content {
+        padding: 0px 20px;
+    }
+
+    .banner h3 {
+        font-size: 2.5rem;
+    }
+
+    .About {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .About .About-left {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .About .About-right {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .features {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .features .section-title {
+        border-left: 5px solid #FF900E;
+        padding-left: 15px;
+        margin-bottom: 50px;
+    }
+
+    .feature-content .card {
+        padding: 20px;
+    }
+
+    .feature-img img {
+        height: 100%;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .ten-years-badge {
+        border-radius: 10px;
+        background: #FF900E;
+        color: #FFF;
+        width: 300px;
+        padding: 40px;
+        text-align: center;
+        position: relative;
+        bottom: 100px;
+    }
+
+    .ten-years-badge h2 {
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    .ten-years-badge p {
+        font-size: 1.2rem;
+    }
+
+    .facts {
+        margin-top: 50px;
+    }
+
+    .fact-images {
+/* flex-direction: column; */
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fact-card {
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        border: 1px solid #FF900E;
+    }
+
+    .fact-card .card-stats {
+        margin-top: 15px;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #000000;
+    }
+
+    .fact-card .card-title {
+        margin-top: 5px;
+        font-size: 1rem;
+        font-weight: 400;
+        color: #727272;
+    }
+
+    .sponsor {
+        text-align: center;
+    }
+
+    .sponsors-img-container {
+        flex-direction: column;
+        gap: 50px;
+    }
 }
