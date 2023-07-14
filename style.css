@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+/* All shared styles ... */
+* {
+    margin: 0;
+    padding: 0;font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+.section-description {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #727272;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.all-button {
+    background-color: #FF900E;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+main {
+    max-width: 1440px;
+    margin: 100px auto;
+}
+
+/* Header styles ... */
+header {
+    background-color: #FFF4E6;
+    padding: 50px 240px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 75px 0px; 
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+font-size: 1rem;
+    padding: 0 1.5rem;
+    font-weight: 600;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #5a5353;
+}
+
+nav ul li a:hover {
+    color: #000000;
+}
+
+/* Banner styles ...  */
+.banner {
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.banner-content {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+.banner h3 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+}
+
+.banner .banner-image img {
+    margin-top: 50px;
+    width: 100%;
+}
+
+/* About styles ... */
+.About {
+    max-width: 1440px;
+    margin: 70px auto;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vh - 100px);
+}
+
+.About .About-left {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.About .About-right {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+/* Features styles ...  */
+.features {
+    margin-top: 150px;
+    display: flex;
+    gap: 150px;
+}
+
+.features .section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 30px;
+    margin-bottom: 50px;
+}
+
+.feature-content .card {
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.feature-img img{
+    height: 85%;
+    width: 100%;
+    /* width: max-content; */
+    margin-left: 0px;
+}
+
+ .ten-years-badge{
+    border-radius: 10px;
+    background: #FF900E;
+    color: #FFF;
+    width: 300px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+
+.ten-years-badge h2{
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.ten-years-badge p{
+    font-size: 1.5rem;
+}
+
+/* Fact styles ...   */
+.sponsor {
+text-align: center;
+}
+.fact-images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.fact-card {
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid #FF900E;
+}
+
+.fact-card .card-stats {
+    margin-top: 15px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+.fact-card .card-title {
+    margin-top: 5px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #727272;
+}
+
+/* Sponsor styles ...   */
+.sponsors-img-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
